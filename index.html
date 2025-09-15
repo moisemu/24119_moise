@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Murindahabi Moise - Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+    body { font-family: 'Poppins', sans-serif; background: #f5f7ff; color: #333; line-height: 1.6; }
+    h1, h2, h3 { font-weight: 700; color: #222; }
+    a { color: inherit; text-decoration: none; }
+
+    /* Navbar */
+    nav {
+      background: rgba(30,30,30,0.95);
+      -webkit-backdrop-filter: blur(6px);
+      backdrop-filter: blur(6px);
+      padding: 15px 25px;
+      position: sticky; top: 0; z-index: 1000;
+    }
+    nav ul { display: flex; justify-content: center; list-style: none; }
+    nav ul li { margin: 0 20px; }
+    nav ul li a { color: #fff; font-weight: 500; transition: color 0.3s; }
+    nav ul li a:hover { color: #ff6ec7; }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(135deg, #0077ff, #7a00ff);
+      color: white;
+    }
+    .hero img {
+      width: 160px; height: 160px; border-radius: 50%;
+      border: 5px solid white; margin-bottom: 20px;
+      object-fit: cover; box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    }
+    .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+    .hero p { font-size: 1.3rem; margin-bottom: 25px; }
+    .hero a {
+      background: white; color: #7a00ff;
+      padding: 14px 30px; border-radius: 50px; font-weight: bold;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      transition: 0.3s ease;
+    }
+    .hero a:hover { background: #ff6ec7; color: white; transform: scale(1.05); }
+
+    /* Sections */
+    section { padding: 70px 20px; max-width: 1100px; margin: auto; }
+    section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.2rem;
+      position: relative;
+    }
+    section h2::after {
+      content: "";
+      display: block;
+      width: 80px; height: 2px;
+      background: linear-gradient(90deg,#0077ff,#ff6ec7);
+      margin: 12px auto 0;
+      border-radius: 2px;
+    }
+
+    /* Cards & Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 22px rgba(0,0,0,0.15);
+    }
+
+    /* Project Cards */
+    .project-card img {
+      width: 100%; border-radius: 10px; margin-bottom: 15px;
+      object-fit: cover; height: 200px;
+    }
+    .project-card h3 { margin-bottom: 10px; }
+
+    /* Contact */
+    .contact-info { text-align: center; }
+    .contact-info p { margin: 10px 0; font-size: 1.1rem; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #1a1a1a;
+      color: #fff;
+      margin-top: 40px;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <!-- 👉 Replace 'profile.jpg' with your own photo -->
+    <img src="op2.jpg" alt="Murindahabi Moise">
+    <h1>Murindahabi Moise</h1>
+    <p>Information Management Student | Cybersecurity & Logistics Enthusiast</p>
+    <a href="#contact">Get in Touch</a>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am currently pursuing a Bachelor’s Degree in Information Technology (Information Management) at Adventist University of Central Africa (AUCA).
+    I am passionate about cloud computing, cybersecurity, and supply chain management. With experience in system support, data management, and logistics,
+    I am dedicated to problem-solving, innovation, and continuous learning.</p>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="grid">
+      <div class="card"><h3>Bachelor’s in IT (Ongoing)</h3><p>AUCA, Kigali | 2023 – 2026</p></div>
+      <div class="card"><h3>Advanced Certificate (MPG)</h3><p>Gahogo Adventist Academy | 2017 – 2019</p></div>
+      <div class="card"><h3>Ordinary Level Certificate</h3><p>EcoSe Musambira | 2014 – 2016</p></div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="card"><h3>Technical</h3><p>Linux, Networking, Cybersecurity, AWS, Java, Python, MySQL</p></div>
+      <div class="card"><h3>Logistics</h3><p>Customs Procedures, Inventory Analytics, Global Supply Chain Design</p></div>
+      <div class="card"><h3>Soft Skills</h3><p>Problem-solving, Adaptability, Teamwork, Time Management</p></div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <h2>Work Experience</h2>
+    <div class="card">
+      <h3>Security Patrol Data Manager</h3>
+      <p>Ndera Sector Office | Feb 2020 – Nov 2020</p>
+      <ul>
+        <li>Managed and analyzed patrol data</li>
+        <li>Provided system support</li>
+        <li>Prepared monthly reports and salaries</li>
+        <li>Organized community campaigns</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Machine Operator</h3>
+      <p>Land Industry | Nov 2019 – Jan 2020</p>
+      <ul>
+        <li>Operated and maintained machinery</li>
+        <li>Assisted in quality control</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card project-card">
+        <!-- 👉 Replace with your project image -->
+        <img src="project1.png" alt="Project 1">
+        <h3>Cybersecurity Dashboard</h3>
+        <p>Designed a SOC dashboard prototype to analyze and monitor threats.</p>
+      </div>
+      <div class="card project-card">
+        <img src="project2.png" alt="Project 2">
+        <h3>Logistics Simulation</h3>
+        <p>Built a supply chain simulation model to optimize inventory flow.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <p>Email: <a href="mailto:murindahabimoise@gmail.com">murindahabimoise@gmail.com</a></p>
+      <p>Phone: +250 780 626 560</p>
+      <p>Location: Kigali, Rwanda</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Murindahabi Moise | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
